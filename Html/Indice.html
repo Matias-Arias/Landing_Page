@@ -1,26 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--Nombre Pagina -->
     <title>MatiasArias-Landing Page</title>
-    <link rel="stylesheet" href="Estilos.css">
+    <!-- Conexion Css -->
+    <link rel="stylesheet" href="/Css/Estilos.css">
+    <!-- Icono -->
+    <link rel="shortcut icon" href="Img/logotipo-empresa-soporte-tecnico.jpg" type="image/x-icon" >
     
 </head>
-<body>
-    <!-- Encabezado de Navegacion -->
+<body  id="Inicio">
+    <!-- Encabezado ----------------------------------------------------------------------->
     <header>
-        <nav>
+        <nav class="logo">
+            <img src="Img/logotipo-empresa-soporte-tecnico.jpg" alt="">
+            <h1>TechAssist Pro</h1>
+        </nav>
+        <!-- Barra de Navegacion -->
+        <nav >
+            <ul class="barraNavegacion">
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="">Nosotros</a></li>
+            </ul>
         </nav>
         <nav>
+            <a class="botonContacto"  href=""><b>Contacto</b></a>
         </nav>
     </header>
-    <!-- Banner -->
-    <main>
-
-    </main>
-    <!-- Seccion de Servicios -->
-    <section>
-
+    <!-- Banner -------------------------------------------------------------------------->
+        <div class="div_Banner">
+            <div class="div_textoBanner">
+                <H1>Servicios Informáticos y Soporte TI Profesional</H1>
+                <P>Somos expertos en soluciones tecnológicas para empresas. 
+                Ofrecemos servicios de soporte técnico, desarrollo web y ciberseguridad 
+                adaptadas a las necesidades de su negocio.</P>
+            </div>
+        </div>
+    
+    <!-- Seccion de Servicios ------------------------------------------------------------>
+    <section class="section_servicios" id="Servicios">
+        <h1 >Nuestros Servicios</h1>
+        <p>Ofrecemos una amplia gama de servicios informáticos y soluciones TI 
+        para empresas de todos los tamaños. Nuestro equipo de expertos está listo 
+        para ayudarle a optimizar sus operaciones tecnológicas.</p>
     </section>
+    <hr>
+    <!-- Cajitas de Servicios -->
+    <section class="lista_servicios">
+        <div class="servicio">
+            <img src="Img/Servicio1.jpg" alt="Servicio 1">
+            <h3>Administración de Servidores</h3>
+        </div>
+        <div class="servicio">
+            <img src="Img/Servicio2.jpg" alt="Servicio 2">
+            <h3>Asesoría y Soporte TI</h3>
+        </div>
+        <div class="servicio">
+            <img src="Img/Servicio3.jpg" alt="Servicio 3">
+            <h3>Ciberseguridad</h3>
+        </div>
+    </section>
+
+    <aside class="section_nosotros">
+        <img src="Img/Nosotros.jpg" alt="">
+        <h1>¿Quienes Somos?</h1>
+        <p>En TechAssist Pro creemos que la tecnología debe ayudarte, no complicarte. 
+        Somos un equipo de técnicos especializados con más de una década de experiencia 
+        en soporte técnico para pymes, profesionales y hogares. Nuestra misión es ofrecer 
+        un servicio cercano, eficiente y transparente, enfocado en soluciones duraderas y 
+        trato humano. Más que reparar, acompañamos a nuestros clientes en su crecimiento tecnológico.</p>
+    </aside>
     <!-- Formulario -->
     <div>
 

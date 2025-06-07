@@ -1,8 +1,196 @@
 /* Paleta de Colores*/
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-hex { color: #127369; }
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-2-hex { color: #10403B; }
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-3-hex { color: #8AA6A3; }
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-4-hex { color: #4C5958; }
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-5-hex { color: #BFBFBF; }
 
+body{
+    text-align: center;
+    background-color: #35796B;
+}
+/* Caracteristicas Encabezado */
+header{
+    display: flex;
+    background-color: #214A48;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 
+}
+hr{
+    border: solid;
+    border-color: gold;
+    width: 80%;
+}
+
+/* formato del Logo */
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    color: white;
+}
+
+.logo img{
+    height: 95px;
+    width: 95px;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Formato de la Barra de Navegacion */
+.barraNavegacion{
+    align-items: space-between;
+    list-style-type: none;
+    display: flex;
+    font-size: 20px;
+}
+.barraNavegacion a{
+    color: white;
+    text-decoration:none ;
+    padding: 10px 30px;
+}
+.barraNavegacion a:hover{
+    border-radius: 50px;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+}
+
+/* Formato del Boton de Contacto */
+.botonContacto{
+    text-decoration: none;
+    width: 1000px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: black;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.botonContacto:hover{
+    color: black;
+    background-color: gold;
+}
+
+/* Banner */
+
+.div_Banner{
+    display: flex;
+    background: linear-gradient(to top, rgb(0 0 0/0.5),rgb(0 0 0/0.5)),url(/Html/Img/curso-online-ciberseguridad-empresas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.div_textoBanner{
+    background: transparent;
+    backdrop-filter: blur(30px);
+    border-radius: 30px;
+    color: white;
+    width: 800px;
+    
+}
+.div_textoBanner h1{
+    font-size: 50px;
+}
+.div_textoBanner p{
+    font-size: 25px;
+}
+
+/*Formato Servicios */
+
+.section_servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 250px; 
+    color: white;
+    font-size: 25px;
+}
+.section_servicios h1{
+    padding: 10px;
+    border-right: solid;
+    border-color: gold;
+}
+.section_servicios p {
+    font-size: 20px;
+    width: 800px;
+    text-align: center;
+}
+
+/* Lista de Servicios */
+.listaServicios{
+    background-color: blue;
+    align-items: space-between;
+    list-style-type: none;
+    display: flex;
+    font-size: 20px;
+}
+.lista_servicios {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* separación entre cajitas */
+    padding: 10px;
+}
+
+.servicio {
+    width: 300px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    background-color: #0B1919;
+    color: white;
+}
+
+.servicio img {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+}
+
+.servicio h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Seccion nosotros */
+.section_nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    height: 250px; 
+    color: white;
+    font-size: 25px;
+}
+.section_nosotros h1{
+    padding: 10px;
+    border-right: solid;
+    border-color: gold;
+}
+.section_nosotros p {
+    font-size: 20px;
+    width: 800px;
+    text-align: center;
+}
+.section_nosotros img{
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+}
