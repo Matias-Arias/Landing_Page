@@ -14,6 +14,15 @@ header{
     padding: 10px;
 
 }
+@media (max-width: 767px){
+    header{
+        flex-direction: column;
+        nav{
+            padding: 10px 0px;
+        }
+    }
+
+}
 hr{
     border: solid;
     border-color: gold;
@@ -59,7 +68,7 @@ hr{
 /* Formato del Boton de Contacto */
 .botonContacto{
     text-decoration: none;
-    width: 1000px;
+    width: auto;
     padding: 15px 30px;
     font-size: 18px;
     color: black;
@@ -75,7 +84,6 @@ hr{
 }
 
 /* Banner */
-
 .div_Banner{
     display: flex;
     background: linear-gradient(to top, rgb(0 0 0/0.5),rgb(0 0 0/0.5)),url(/Html/Img/curso-online-ciberseguridad-empresas.jpg);
@@ -89,7 +97,12 @@ hr{
     text-align: center;
     align-items: center;
 }
-
+@media (max-width: 768px) {
+    .div_Banner{
+    width: auto;
+    height: auto;
+}
+}
 .div_textoBanner{
     background: transparent;
     backdrop-filter: blur(30px);
@@ -128,13 +141,6 @@ hr{
 }
 
 /* Lista de Servicios */
-.listaServicios{
-    background-color: blue;
-    align-items: space-between;
-    list-style-type: none;
-    display: flex;
-    font-size: 20px;
-}
 .lista_servicios {
     display: flex;
     justify-content: center;
@@ -174,23 +180,161 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     height: 250px; 
     color: white;
     font-size: 25px;
+    padding: 100px;
+}
+.section_nosotros article{
+    background-color: #0B1919;
+    border-radius: 30px;
+    margin-left: 10px;
+    height: 300px;
 }
 .section_nosotros h1{
+    font-size: 35px;
     padding: 10px;
-    border-right: solid;
+    border-bottom: solid;
     border-color: gold;
+    margin-left:20px ;
+    margin-right: 20px;
+    margin-bottom: 0px;
 }
 .section_nosotros p {
+    padding: 10px;
     font-size: 20px;
     width: 800px;
     text-align: center;
 }
 .section_nosotros img{
+    padding-left: 10px;
     height: 300px;
     width: 300px;
     border-radius: 30px;
+}
+@media (max-width: 768px) {
+    .section_nosotros {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .section_nosotros img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .section_nosotros article {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .section_nosotros p {
+        font-size: 18px;
+        height: 100px;
+        width: auto;
+    }
+}
+/* Formulario de Contacto */
+.div_Contacto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #0B1919; 
+    border-radius: 30px;
+    flex-wrap: wrap; /* Permite adaptarse en pantallas pequeñas */
+}
+
+.caja_formulario {
+    text-align: left;
+    max-width: 400px;
+    width: 100%; /* Asegura que se ajuste en pantallas pequeñas */
+    padding: 20px;
+    background-color: #214A48;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.caja_formulario label {
+    color: white;
+    font-weight: bold;
+}
+
+.caja_formulario input,
+.caja_formulario textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    background-color: white;
+}
+
+.caja_articulo {
+    max-width: 500px;
+    width: 100%; /* Adaptable */
+    padding: 20px;
+    background-color: #214A48;
+    color: gold;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: 280px;
+}
+
+.caja_articulo p {
+    background-color: #35796B;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    height: auto;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+/* Responsive: Móvil Contacto*/
+@media (max-width: 768px) {
+    .div_Contacto {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .caja_formulario,
+    .caja_articulo {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .caja_articulo p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* Footer */
+
+footer{
+    background-color: #030706;
+    color: white;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
 }
