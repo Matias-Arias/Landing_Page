@@ -97,6 +97,7 @@ hr{
     text-align: center;
     align-items: center;
 }
+/* Responsive Banner Movil */
 @media (max-width: 768px) {
     .div_Banner{
     width: auto;
