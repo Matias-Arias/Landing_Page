@@ -12,3 +12,4 @@ o Pie de página.
 <footer>, etc.
 3. Aplica estilos utilizando CSS3 en archivo externo, cuidando:
 o Colores, márgenes, tamaños de fuente
+<!-- Finalizado-------------------------------------------------------------- -->
